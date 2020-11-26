@@ -1,0 +1,166 @@
+https://biology.stackexchange.com/questions/96883/could-using-machine-intelligence-to-determine-prioritisation-for-vaccine-rollout
+https://datascience.stackexchange.com/questions/85788/how-effective-would-a-data-driven-vaccination-program-be-over-a-simple-rules-bas/85798#85798
+
+https://www.gov.uk/government/publications/priority-groups-for-coronavirus-covid-19-vaccination-advice-from-the-jcvi-25-september-2020/jcvi-updated-interim-advice-on-priority-groups-for-covid-19-vaccination
+
+existing priority:
+    older adults’ resident in a care home and care home workers[footnote 1]
+    all those 80 years of age and over and health and social care workers[footnote 1]
+    all those 75 years of age and over
+    all those 70 years of age and over
+    all those 65 years of age and over
+    high-risk adults under 65 years of age
+    moderate-risk adults under 65 years of age
+    all those 60 years of age and over
+    all those 55 years of age and over
+    all those 50 years of age and over
+    rest of the population (priority to be determined)[footnote 2]
+    
+    
+https://www.nature.com/articles/s41586-020-2521-4
+comorbidities:
+    
+    solid organ transplant recipients
+    haematological cancers
+    certain neurological conditions
+    chronic kidney disease
+    immunosuppression
+    dementia
+    stroke
+    poorly controlled diabetes
+    chronic pulmonary disease
+    obesity (BMI greater than 40)
+    malignancy
+    liver disease
+    
+    Also sex
+
+ https://www.gov.uk/government/publications/national-covid-19-surveillance-reports
+ https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/923668/Weekly_COVID19_Surveillance_Report_week_40.pdf   
+    Case detections in England increased from 26,259 in week 38 to 29,797 in week 39
+    
+    
+    Through the GP swabbing scheme, positivity remained stable at 1.7% in week 39
+    
+    383K tested positive. 7.5%
+    
+    case vs age shows strong bias towards lower age group 16000 (20-29), 4000 (60-69)
+    although there are probably less older people in the population. that needs considering.
+    This inplies a strong likelyhood of people mingling mainly with their own age group.
+    ... but then testing of older people seems lower ...
+    
+    case rates 60 per 100,000 male & female
+    
+Factors associated with COVID-19-related death using OpenSAFELY
+---------------------------------------------------------------
+COVID-19-related death was associated with: being male (hazard ratio (HR) 1.59 (95% confidence interval 1.53–1.65)); 
+Black and South Asian people were at higher risk, even after adjustment for other factors (HR 1.48 (1.29–1.69) and 1.45 (1.32–1.58), 
+
+90% of the COVID-19-related deaths in the UK have been in people over 60, and 60% in men
+
+
+COVID-19 showed that the risk of death was higher for patients with cardiac, pulmonary and kidney disease, 
+as well as cancer, dementia and obesity (HRs of 1.19–1.39 after correction for age and sex)6
+
+ Increasing age was strongly associated with risk, with people aged 80 
+ or over having a more than 20-fold-increased risk compared to 50–59-year-olds 
+ (fully adjusted HR 20.60; 95% confidence interval (CI) 18.70–22.68)
+ 
+
+People from all BAME groups were at higher risk than those of white ethnicity. 
+When adjusted only for age and sex, hazard ratios ranged from 1.62–1.88 for Black and South Asian individuals
+and people of mixed ethnicities, compared to white people,
+
+
+Increasing risks were seen with increasing obesity (fully adjusted HR 1.92 (1.72–2.13) for a body mass index 
+(BMI; kg m−2) of over 40),
+
+deprivation 1-5 (IMD) gives increase of 2x
+
+We found a consistent pattern of increasing risk with greater deprivation, with the most deprived quintile having 
+a hazard ratio of 1.79 compared to the least deprived, consistent with recent national statistics16. 
+Again, very little of this increased risk was explained by pre-existing disease or clinical factors,
+suggesting that other social factors have an important role.
+
+Increasing risks were seen with increasing obesity (fully adjusted HR 1.92 (1.72–2.13) 
+for a body mass index (BMI; kg m−2) of over 40)
+
+https://github.com/opensafely/risk-factors-research.
+All clinical and medicines codelists are openly available for inspection and reuse at https://codelists.opensafely.org/.
+
+================================
+Mental illness factors
+
+https://onlinelibrary.wiley.com/doi/10.1002/wps.20806
+
+                            adjusted
+ADHD            7.31        5.82
+Bipolar         7.69        5.72
+Depression      10.43       7.64
+Schizophrenia   9.89        7.34
+
+================== prevelences =============
+
+2011 age stats
+--------------
+0–4 	3,914,000 	6.2
+5–9 	3,517,000 	5.6
+10–14 	3,670,000 	5.8
+15–19 	3,997,000 	6.3
+20–24 	4,297,000 	6.8
+25–29 	4,307,000 	6.8
+30–34 	4,126,000 	6.5
+35–39 	4,194,000 	6.6
+40–44 	4,626,000 	7.3
+45–49 	4,643,000 	7.3
+50–54 	4,095,000 	6.5
+55–59 	3,614,000 	5.7
+60–64 	3,807,000 	6.0
+65–69 	3,017,000 	4.8
+70–74 	2,463,000 	3.9
+75–79 	2,006,000 	3.2
+80–84 	1,496,000 	2.4
+85–89 	918,000 	1.5
+90+ 	476,000 	0.8 
+
+The 2011 census - the most accurate source - showed that 14.5% of the English population were from BAME backgrounds
+
+Within the UK, ADHD is sometimes referred to as Hyperkinetic Disorder. ADHD affects about 3-5% of children and 2% of adults and is more common in males
+
+Bipolar is a severe mental health condition characterised by significant mood swings including manic highs and depressive lows. The majority of individuals with bipolar experience alternating episodes of mania and depression. 1.3 million 
+people in the UK have bipolar. That is one in fifty people
+
+ major depression (6.4%),   mind -3%
+ 
+ Schizophrenia 14.5 per 1000 people
+ 
+ obesity >30 BMI around 25%
+ 2% of men, 4% of women morbidly obese  40+
+ 
+ -----------------------------------------------------
+ https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronaviruscovid19infectionsurveypilot/30october2020
+ 
+ 
+ https://www.gov.uk/government/publications/demographic-data-for-coronavirus-testing-england-28-may-to-26-august/demographic-data-for-coronavirus-covid-19-testing-england-28-may-to-26-august#table-5
+ 
+ positive cases tier 1+2
+ Age 	    Female 	Male 	Total
+0 to 9 	    1,514 	1,577 	3,104
+10 to 19 	2,959 	2,756 	5,727
+20 to 29 	8,226 	6,380 	14,702
+30 to 39 	6,753 	6,166 	13,058
+40 to 49 	5,753 	4,731 	10,576
+50 to 59 	5,111 	4,121 	9,327
+60 to 69 	2,822 	2,720 	5,590
+70 to 79 	1,916 	1,950 	3,886
+80 to 89 	2,910 	1,974 	4,900
+90+ 	    1,852 	653 	2,513
+-----------------------------------------------------
+
+https://www.cebm.net/covid-19/estimating-the-infection-fatality-ratio-in-england/
+0.49% infection fatality ratio
+
+about 1%
+https://www.imperial.ac.uk/news/207273/covid-19-deaths-infection-fatality-ratio-about/
+
+ 
