@@ -17,7 +17,7 @@ class BLMAgeVaccinator(object):
             else:
                 if c.age == age:
                     # process                
-                    if c.male:
+                    if c.bame:
                         bame.append(c)
                     else:
                         not_bame.append(c)
@@ -28,7 +28,7 @@ class BLMAgeVaccinator(object):
                     bame = []
                     not_bame = []
                     # process
-                    if c.male:
+                    if c.bame:
                         bame.append(c)
                     else:
                         not_bame.append(c)
