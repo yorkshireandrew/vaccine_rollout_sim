@@ -16,6 +16,7 @@ class PopulationCreator(object):
         self.schiz_prob = 0.0145
         self.male_obese_prob = 0.02
         self.female_obese_prob = 0.04
+        self.bame_prob = 0.145
         self.ifr = 0.01 # IFR - Infection Fatality Ratio (overall)
         
         
@@ -28,7 +29,7 @@ class PopulationCreator(object):
             for dood in range(0, age_seg):
                 person = Person()
                 person.age = x * 5 + 2 # could be more random here
-                if random.bame() < self.bame_prob:
+                if random.random() < self.bame_prob:
                     person.bame = True
                 if random.random() < self.male_prob:
                     person.male = True
