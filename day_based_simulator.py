@@ -1,6 +1,8 @@
 from age_vaccinator import AgeVaccinator
 from male_age_vaccinator import MaleAgeVaccinator
 from ideal_vaccinator import IdealVaccinator
+from blm_age_vaccinator import BLMAgeVaccinator
+
 from population_creator import PopulationCreator
 
 import random
@@ -31,12 +33,16 @@ class Simulator(object):
             self.vaccinator = MaleAgeVaccinator
         if vaccinator_type == 'IdealVaccinator':
             self.vaccinator = IdealVaccinator
+        if vaccinator_type == 'BLMAgeVaccinator':
+            self.vaccinator = BLMAgeVaccinator
+        
 
         # Initialise
         self.lockdown = False
         self.partial_lockdown = True
         self.day = 0
-        self.simulation_size = 1000000 
+        self.simulation_size = 100000
+        self._people = None
         
         # Derive values    
         self.ratio = self.population_size / self.simulation_size
@@ -84,7 +90,15 @@ class Simulator(object):
     
     def number_dead(self, people):
         case_list = [1 for p in people if p.dead]
-        return len(case_list)    
+        return len(case_list)
+
+    def number_bame(self):
+        case_list = [1 for p in self._people if p.bame]
+        return len(case_list)
+
+    def number_bame_dead(self):
+        case_list = [1 for p in self._people if p.dead and p.bame]
+        return len(case_list)  
         
     def get_people_to_infect(self, people):
         return [p for p in people if not p.dead and (p.infection_phase < 9 or p.infection_phase > 11)] # sick people dont go out
@@ -141,6 +155,7 @@ class Simulator(object):
     def run(self):
         pc = PopulationCreator()
         people = pc.create_population(self.simulation_size)
+        self._people = people
         print('created people')
         pc.set_probability(people)
         print('set probabilities')
@@ -192,33 +207,40 @@ class Simulator(object):
             
 if __name__ == '__main__':
 
-    age_results = []
-    male_age_results = []
-    ideal_results = []
+    bame_numbers=[]
+    bame_dead=[]
+    improved_bame_numbers=[]
+    improved_bame_dead=[]
 
-    for x in range(0,14):      
+    for x in range(0,28):      
         s = Simulator('AgeVaccinator')
-        age_results.append(s.run())
-        s = Simulator('MaleAgeVaccinator')
-        male_age_results.append(s.run())
-        s = Simulator('IdealVaccinator')
-        ideal_results.append(s.run())
+        s.run()
+        bame_numbers.append(s.number_bame())
+        bame_dead.append(s.number_bame_dead())
+        
+        s = Simulator('BLMAgeVaccinator')
+        s.run()
+        improved_bame_numbers.append(s.number_bame())
+        improved_bame_dead.append(s.number_bame_dead())
 
         print('--------------')
-        print('Age based')
-        print(age_results)
-        print('Male Age based')
-        print(male_age_results)
-        print('Ideal')
-        print(ideal_results)
+        print('bame_numbers')
+        print(bame_numbers)
+        print('bame_dead')
+        print(bame_dead)
+        print('improved_bame_numbers')
+        print(improved_bame_numbers)
+        print('improved_bame_dead')
+        print(improved_bame_dead)
         print('--------------')
-        print(' summary ')
-        print('Age based Average')
-        print(str(sum(age_results)/len(age_results)))
-        print('Male Age Average')
-        print(str(sum(male_age_results)/len(male_age_results)))
-        print('Ideal Average')
-        print(str(sum(ideal_results)/len(ideal_results)))
+        print('sum bame_numbers')
+        print(sum(bame_numbers))
+        print('sum bame_dead')
+        print(sum(bame_dead))
+        print('sum improved_bame_numbers')
+        print(sum(improved_bame_numbers))
+        print('sum improved_bame_dead')
+        print(sum(improved_bame_dead))
                
             
             

@@ -28,6 +28,8 @@ class PopulationCreator(object):
             for dood in range(0, age_seg):
                 person = Person()
                 person.age = x * 5 + 2 # could be more random here
+                if random.bame() < self.bame_prob:
+                    person.bame = True
                 if random.random() < self.male_prob:
                     person.male = True
                 if random.random() < self.adhd_prob:
