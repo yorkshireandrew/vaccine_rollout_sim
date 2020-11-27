@@ -41,7 +41,7 @@ class Simulator(object):
         self.lockdown = False
         self.partial_lockdown = True
         self.day = 0
-        self.simulation_size = 100000
+        self.simulation_size = 1000000
         self._people = None
         
         # Derive values    
