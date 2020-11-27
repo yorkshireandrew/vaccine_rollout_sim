@@ -233,14 +233,14 @@ if __name__ == '__main__':
         print('improved_bame_dead')
         print(improved_bame_dead)
         print('--------------')
-        print('sum bame_numbers')
-        print(sum(bame_numbers))
-        print('sum bame_dead')
-        print(sum(bame_dead))
-        print('sum improved_bame_numbers')
-        print(sum(improved_bame_numbers))
-        print('sum improved_bame_dead')
-        print(sum(improved_bame_dead))
+        print('av bame_numbers')
+        print(str(sum(bame_numbers)/len(bame_numbers)))
+        print('av bame_dead')
+        print(str(sum(bame_dead)/len(bame_dead)))
+        print('av improved_bame_numbers')
+        print(str(sum(improved_bame_numbers)/len(improved_bame_numbers)))
+        print('av improved_bame_dead')
+        print(str(sum(improved_bame_dead)/len(improved_bame_dead)))
                
             
             
