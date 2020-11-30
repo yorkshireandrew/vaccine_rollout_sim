@@ -235,13 +235,13 @@ if __name__ == '__main__':
         print('')
         print('------ Average figures scaled back to real-world population --------')
         print('av bame_numbers')
-        print(str(int(s.scale * sum(bame_numbers)/len(bame_numbers))))
+        print(str(int(s.ratio * sum(bame_numbers)/len(bame_numbers))))
         print('av bame_dead')
-        print(str(int(s.scale * sum(bame_dead)/len(bame_dead))))
+        print(str(int(s.ratio * sum(bame_dead)/len(bame_dead))))
         print('av improved_bame_numbers')
-        print(str(int(s.scale * sum(improved_bame_numbers)/len(improved_bame_numbers))))
+        print(str(int(s.ratio * sum(improved_bame_numbers)/len(improved_bame_numbers))))
         print('av improved_bame_dead')
-        print(str(int(s.scale * sum(improved_bame_dead)/len(improved_bame_dead))))
+        print(str(int(s.ratio * sum(improved_bame_dead)/len(improved_bame_dead))))
                
             
             
