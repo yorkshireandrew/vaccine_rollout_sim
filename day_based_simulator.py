@@ -223,7 +223,7 @@ if __name__ == '__main__':
         improved_bame_numbers.append(s.number_bame())
         improved_bame_dead.append(s.number_bame_dead())
 
-        print('--------------')
+        print('------ Raw numbers in simulation --------')
         print('bame_numbers')
         print(bame_numbers)
         print('bame_dead')
@@ -232,15 +232,16 @@ if __name__ == '__main__':
         print(improved_bame_numbers)
         print('improved_bame_dead')
         print(improved_bame_dead)
-        print('--------------')
+        print('')
+        print('------ Average figures scaled back to real-world population --------')
         print('av bame_numbers')
-        print(str(sum(bame_numbers)/len(bame_numbers)))
+        print(str(int(self.scale * sum(bame_numbers)/len(bame_numbers))))
         print('av bame_dead')
-        print(str(sum(bame_dead)/len(bame_dead)))
+        print(str(int(self.scale * sum(bame_dead)/len(bame_dead))))
         print('av improved_bame_numbers')
-        print(str(sum(improved_bame_numbers)/len(improved_bame_numbers)))
+        print(str(int(self.scale * sum(improved_bame_numbers)/len(improved_bame_numbers))))
         print('av improved_bame_dead')
-        print(str(sum(improved_bame_dead)/len(improved_bame_dead)))
+        print(str(int(self.scale * sum(improved_bame_dead)/len(improved_bame_dead))))
                
             
             
