@@ -163,4 +163,28 @@ https://www.cebm.net/covid-19/estimating-the-infection-fatality-ratio-in-england
 about 1%
 https://www.imperial.ac.uk/news/207273/covid-19-deaths-infection-fatality-ratio-about/
 
+
+https://fullfact.org/health/covid-ifr-more-01/
+
+6% tested positive for antibodies - circa 7th July  - around 3.36 M
+287K Actually recorded cases 
+So 11.7 fold underestimate
+
+https://www.bmj.com/content/370/bmj.m3605
+Early in pandemic positive tests represent 7 - 10% of all cases
+
+https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200306-sitrep-46-covid-19.pdf?sfvrsn=96b04adf_4#:~:text=For%20COVID%2D19%2C,infections%2C%20requiring%20ventilation.
+80% of cases are mild or asymtomatic
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7557299/ 
+
+https://www.cebm.net/covid-19/covid-19-what-proportion-are-asymptomatic/
+
+https://www.bmj.com/content/369/bmj.m1375
+76% asymtomatic
+
+https://www.bbc.co.uk/news/health-53320155
+22% symptomatic on test day
+
+
  

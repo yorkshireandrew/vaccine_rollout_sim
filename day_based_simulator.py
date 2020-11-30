@@ -24,7 +24,7 @@ class Simulator(object):
 #        self.outof_lockdown_new_cases_per_day           = 7000
         self.into_partial_lockdown_new_cases_per_day    = 500
         self.outof_partial_lockdown_new_cases_per_day   = 100 # needs to be a small fraction of: into_partial_lockdown_new_cases_per_day 
-        self.asymptomatic_factor                        = 0.4 # proportion that dont contribute to figures
+        self.asymptomatic_factor                        = 3.0 # proportion that dont contribute to figures
         self.initial_infections                         = 65000 #65000 gives around 20000 cases per day after 3 cycles
 
         if vaccinator_type == 'AgeVaccinator':
@@ -41,8 +41,8 @@ class Simulator(object):
         self.lockdown = False
         self.partial_lockdown = True
         self.day = 0
-        self.simulation_size = 1000000
         self._people = None
+        self.simulation_size = 250000 
         
         # Derive values    
         self.ratio = self.population_size / self.simulation_size
