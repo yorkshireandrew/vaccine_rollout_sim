@@ -36,7 +36,7 @@ class Simulator(object):
         self.lockdown = False
         self.partial_lockdown = True
         self.day = 0
-        self.simulation_size = 1000000 
+        self.simulation_size = 250000 
         
         # Derive values    
         self.ratio = self.population_size / self.simulation_size
