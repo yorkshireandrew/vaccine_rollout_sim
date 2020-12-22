@@ -8,9 +8,10 @@ import random
 class Simulator(object):
 
     def __init__(self, vaccinator_type):
-        self.r_natural                                  = 3.5
-        self.r_partial_lockdown                         = 1.3
-        self.r_lockdown                                 = 0.9
+        strain2_spread_ratio                            = 1.7
+        self.r_natural                                  = 3.5 * strain2_spread_ratio
+        self.r_partial_lockdown                         = 1.3 * strain2_spread_ratio
+        self.r_lockdown                                 = 0.9 * strain2_spread_ratio
         
         self.vaccine_effectiveness                      = 0.9
         self.population_size                            = 60000000
